@@ -1,11 +1,21 @@
 package br.com.fiap.rickandmorty.model;
 
+import com.google.gson.annotations.SerializedName;
+
 public class Personagem {
     private int id;
+
+    @SerializedName("name")
     private String nome;
+
     private String status;
+
+    @SerializedName("gender")
     private String genero;
+
+    @SerializedName("species")
     private String especie;
+
     private String origem;
 
     // getters e setters
@@ -56,5 +66,15 @@ public class Personagem {
 
     public void setOrigem(String origem) {
         this.origem = origem;
+    }
+
+    @Override
+    public String toString() {
+        return  "ID: " + id + "\n" +
+                "Nome: " + nome + "\n" +
+                "Status: " + status + "\n" +
+                "Gênero: " + genero + "\n" +
+                "Espécie: " + especie + "\n" +
+                "Origem: " + origem + "\n";
     }
 }
