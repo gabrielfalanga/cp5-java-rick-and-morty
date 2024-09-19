@@ -1,8 +1,12 @@
 package br.com.fiap.rickandmorty.service;
 
 import br.com.fiap.rickandmorty.model.Personagem;
+import com.google.gson.Gson;
 
+import java.net.URI;
 import java.net.http.HttpClient;
+import java.net.http.HttpRequest;
+import java.net.http.HttpResponse;
 
 public class RickAndMortyService {
 
@@ -12,8 +16,18 @@ public class RickAndMortyService {
 
         try {
             String uri = "https://rickandmortyapi.com/api/character/" + id;
+
             HttpClient client = HttpClient.newHttpClient();
-            HttpClient
+
+            HttpRequest request = HttpRequest.newBuilder()
+                                             .uri(URI.create(uri))
+                                             .build();
+
+            HttpResponse<String> response = client.send(request, HttpResponse.BodyHandlers.ofString());
+
+            return new Gson().fromJson(response.body(), Personagem.class);
+        } catch (Exception e) {
+            throw new RuntimeException(e);
         }
     }
 }
