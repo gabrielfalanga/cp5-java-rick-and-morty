@@ -13,15 +13,14 @@ import java.net.http.HttpResponse;
 public class RickAndMortyService {
 
     /**
-     * API Via Cep - https://rickandmortyapi.com/
+     * API Rick and Morty - https://rickandmortyapi.com/
      * Esta documentação ajudará você a se familiarizar com os recursos da API do Rick and Morty e mostrará como fazer
      * diferentes, consultas para que você possa aproveitar ao máximo.
      *
      * Exemplo de consulta de Personagem:
-     *     rickandmortyapi.com/api/character/1
-     * Saída
-     * URL: https://rickandmortyapi.com/api/character/1
      *
+     * URI: https://rickandmortyapi.com/api/character/1
+     * Saída:
      *     {
      *     "id": 1,
      *     "name": "Rick Sanchez",
