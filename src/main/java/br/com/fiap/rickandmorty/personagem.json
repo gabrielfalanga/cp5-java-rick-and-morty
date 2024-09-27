@@ -1,8 +1,8 @@
 {
-  "id": 3,
-  "name": "Summer Smith",
-  "status": "Alive",
-  "gender": "Female",
-  "species": "Human",
-  "origem": "Earth (Replacement Dimension)"
+  "id": 100,
+  "name": "Bubonic Plague",
+  "status": "Dead",
+  "gender": "unknown",
+  "species": "Disease",
+  "origem": "Anatomy Park"
 }

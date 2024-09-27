@@ -7,7 +7,7 @@ import br.com.fiap.rickandmorty.service.RickAndMortyService;
 import java.util.Scanner;
 
 
-public class TesteRickAndMorty {
+public class TesteGravarJson {
     // Gabriel Martins Falanga     RM: 555061
     // Guilherme Romanholi Santos  RM: 557462
 
